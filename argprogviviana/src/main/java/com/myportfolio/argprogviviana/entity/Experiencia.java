@@ -4,10 +4,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
-
-import java.util.Date;
 
 @Entity
 public class Experiencia {
@@ -18,15 +14,15 @@ public class Experiencia {
     private String nombre_empresa;
     private String puesto;
     private String logo_expe;
-    @Temporal(TemporalType.DATE)
-    private Date desde;
-    @Temporal(TemporalType.DATE)
-    private Date hasta;
+
+    private String desde;
+
+    private String hasta;
 
     public Experiencia() {
     }
 
-    public Experiencia(String nombre_empresa, String puesto, String logo_expe, Date desde, Date hasta) {
+    public Experiencia(String nombre_empresa, String puesto, String logo_expe, String desde, String hasta) {
         this.nombre_empresa = nombre_empresa;
         this.puesto = puesto;
         this.logo_expe = logo_expe;
@@ -66,19 +62,19 @@ public class Experiencia {
         this.logo_expe = logo_expe;
     }
 
-    public Date getDesde() {
+    public String getDesde() {
         return desde;
     }
 
-    public void setDesde(Date desde) {
+    public void setDesde(String desde) {
         this.desde = desde;
     }
 
-    public Date getHasta() {
+    public String getHasta() {
         return hasta;
     }
 
-    public void setHasta(Date hasta) {
+    public void setHasta(String hasta) {
         this.hasta = hasta;
     }
 }

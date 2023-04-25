@@ -31,4 +31,8 @@ public class SPersona{
         personaRepo.save(perso);
     }
 
+    public Persona login(String email, String password) {
+        return personaRepo.findByEmailAndPassword(email, password);
+    }
+
 }
