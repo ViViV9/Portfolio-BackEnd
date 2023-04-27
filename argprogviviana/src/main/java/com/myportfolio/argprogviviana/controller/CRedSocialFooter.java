@@ -9,7 +9,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("redfooter")
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://portfoliovivianaverachtert.web.app")
 public class CRedSocialFooter {
     @Autowired
     SRedSocialFooter redFooterRepo;

@@ -17,7 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 @RestController
 @RequestMapping("redsocial")
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://portfoliovivianaverachtert.web.app")
 public class CRedSocial {
     @Autowired
     SRedSocial redsocServ;
